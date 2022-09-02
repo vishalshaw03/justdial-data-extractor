@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup, element
 import csv
-from helpers.phone import generate_number, get_data_bw, return_op
+from .phone import generate_number, get_data_bw, return_op
 
 def getDigitMap(content: bytes) -> dict:
     css = get_data_bw(str(content), ".icon-", ".mobilesv")
