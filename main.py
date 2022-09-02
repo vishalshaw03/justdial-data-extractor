@@ -48,7 +48,7 @@ def main():
 
         while extractContent(res.content, writer) != 0:
             page += 1
-            if page == 5:
+            if page == 25:
                 break
 
             res = requests.get(url + "/page-" + str(page), headers=headers)
